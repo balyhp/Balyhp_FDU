@@ -3,4 +3,7 @@ It's really suffering to take undergraduate experiment lessons especially if you
 I think it's unfair for those who want to do theoritical physics work to suffer from this, so I create this repo.
 
 It contains complete report papers of the compulsory experiment lessons you will take in FDU physics department, as well as a latex template of report papers.
+## How to use
+you can download any part you need in zip format, or clone the whole repo to you own PC
+
 ## Enjoy yourself !
