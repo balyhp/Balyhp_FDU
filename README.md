@@ -6,4 +6,5 @@ It contains complete report papers of the compulsory experiment lessons you will
 ## How to use
 You can download any part you need in .zip format, or clone the whole repo to you own PC as well as share the resources with your classmates. 
 
+As for the template, in the folder you will find `template.cls` `template.tex` and `ref.bib`, make sure they are under the same directory in compiling.
 ## Enjoy yourself !
