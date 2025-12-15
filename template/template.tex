@@ -1,0 +1,79 @@
+\documentclass{template}
+%%notice: use xelatex-bibtex-xelatex to compile the document, othwise the references will not show.
+%%notice: use xelatex-bibtex-xelatex to compile the document, othwise the references will not show.
+%%notice: use xelatex-bibtex-xelatex to compile the document, othwise the references will not show.
+\usepackage[colorlinks,urlcolor=blue,linkcolor=blue,anchorcolor=blue,citecolor=blue]{hyperref}
+\usepackage{cite}
+% support for Chinese characters in document
+%\usepackage[super,sort&compress]{natbib} % for superscript citation
+% set font size for different section levels
+\renewcommand\normalsize{\zihao{-4}\selectfont}
+
+\newenvironment{abstruct}{\par\noindent\normalfont \CJKfamily{song}\bfseries \zihao{-4}{摘要：}\normalfont}{\vspace{-1.3em}}
+
+\renewcommand\refname{}
+
+\usepackage{etoolbox}
+% remove References title
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+
+\title{实验报告模板}
+\author{Zric \qquad 物理学系}
+\date{}             %avoid showing date
+%\date{2024/9/5}    
+
+\begin{document}
+	\pagestyle{bianyi}
+
+	\maketitle
+
+\begin{abstruct}
+     humorous physics experiment
+\end{abstruct}
+
+\section{\label{Sec.1}引言}
+
+test citation\textsuperscript{\cite{PhysRev.140.A1133}}.
+
+\section{\label{Sec.2}实验原理}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{example-image}
+    \caption{example figure caption}
+    \label{fig:example}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}
+    {0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{example-image-a}
+    \caption{example figure A}
+    \label{fig:exampleA}
+  \end{minipage}
+  \hfill
+  \begin{minipage}
+    {0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{example-image-b}
+    \caption{example figure B}
+    \label{fig:exampleB}
+  \end{minipage}
+\end{figure}
+
+\section{\label{Sec.3}实验装置与过程}
+
+\section{\label{Sec.4}实验数据与分析}
+
+\section{\label{Sec.5}实验结论}
+  
+\section{参考文献}
+  \nocite{*}    %show all references in the .bib file
+  \bibliographystyle{unsrt}       %ref style
+  %\bibliographystyle{plain}
+  \bibliography{ref}
+
+\end{document}
